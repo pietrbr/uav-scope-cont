@@ -11,15 +11,15 @@ elif [[ $# -eq 1 && $1 != 'cp' ]];
     then echo 'No option like that... you wanted to write cp?'
 fi
 
-## Compile scope
-#echo "Start to compile"
-#cd ~/radio_code/srsLTE/build
-#
-#cmake ..
-#
-#make -j 2
-#
-#make install
-#
-#ldconfig
-# 
+# Compile scope
+echo "Start to compile"
+cd ~/radio_code/srsLTE/build
+
+cmake ..
+
+make -j 2
+
+make install
+
+ldconfig
+ 
