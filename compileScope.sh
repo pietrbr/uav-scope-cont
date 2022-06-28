@@ -1,6 +1,6 @@
 #!/bin/bash  
 echo "Start to compile"
-cd radio_code/srsLTE/build
+cd ~/radio_code/srsLTE/build
 
 cmake ..
 
