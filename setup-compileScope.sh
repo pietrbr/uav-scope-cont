@@ -6,10 +6,8 @@ if [[ $# -eq 0 ]];
 elif [[ $# -eq 1 && $1 == 'cp' ]];
     then print 'fCopying modified scope file\n\n'
     cp ./scheduler_metric.cc /root/radio_code/srsLTE/srsenb/src/stack/mac/
-	cp ./.tmux.conf ~/
 elif [[ $# -eq 1 && $1 == 'tm' ]];
     then print 'fCopying tmux configuration file\n\n'
-    cp ./scheduler_metric.cc /root/radio_code/srsLTE/srsenb/src/stack/mac/
 	cp ./.tmux.conf ~/
 elif [[ $# -eq 1 && $1 != 'cp' ]];
     then printf 'No option like that... you wanted to write cp or tm?\n\n'
