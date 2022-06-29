@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 echo "Run enb.config"
 tmux set-option remain-on-exit on
 tmux split-window "bash execIperf.sh"

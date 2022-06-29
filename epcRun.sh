@@ -1,4 +1,3 @@
-
 #!/bin/bash  
 echo "Run enb.config"
 
