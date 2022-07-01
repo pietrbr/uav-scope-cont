@@ -1,5 +1,8 @@
 #!/bin/bash
 echo "add DNAT"
+# IP RULES
+# the traffic going to ue container (from LTE connection) should be
+# rerouted to ue host
 iptables -t nat -A PREROUTING -d 172.16.0.8 -j DNAT --to-destination 240.84.80.1
 #echo "Run server Iperf"
 #tmux split-window "iperf3 -s"
