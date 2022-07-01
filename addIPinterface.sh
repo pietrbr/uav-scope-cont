@@ -7,8 +7,9 @@ do
     ip=$(ifconfig tun_srsue | grep 'inet addr:' | cut -d':' -f2 | cut -d' ' -f1)
 	echo $ip
 
-	# IP RULE
-	# The IP to add is the one of the network between bng host e bng container
+	# IP RULES
+	# 1 - reroute traffic going to gnb container LTE network
+	#     through $IP
 
 	# Matteo
     #ip route add 10.241.115.0/24 via $ip
