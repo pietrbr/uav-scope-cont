@@ -12,9 +12,9 @@ do
 	#     through $IP
 
 	# Matteo
-    #ip route add 10.241.115.0/24 via $ip
-	# Pietro
-    ip route add 10.244.105.0/24 via $ip
+    	ip route add 10.241.115.0/24 via $ip
+    # Pietro
+    #ip route add 10.244.105.0/24 via $ip
 
 	comm_ex=$(echo $?)
 	echo $comm_ex
