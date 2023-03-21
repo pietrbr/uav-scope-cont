@@ -8,14 +8,10 @@ do
 	echo $ip
 
 	# IP RULES
-	# 1 - reroute traffic going to gnb container LTE network
-	#     through $IP
-
-	# Matteo
-    	ip route add 10.241.115.0/24 via $ip
-    # Pietro
-    #ip route add 10.244.105.0/24 via $ip
-
+	# 1) reroute traffic going to gnb container LTE network
+	# through $IP
+	ip route add $IP_A0 via $ip
+    
 	comm_ex=$(echo $?)
 	echo $comm_ex
 done
