@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Assign IP addresses to variables
-bash addIPvars.sh
+source addIPvars.sh
 
 #echo "add DNAT"
 #iptables -t nat -A PREROUTING -d 240.84.80.1 -j DNAT --to-destination $IP_B2
